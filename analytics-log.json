@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Iams :: App Login",
+    "url": "http://localhost/iams/login.php",
+    "referer": "http://localhost/iams/terminal/home",
+    "host": "localhost",
+    "visitorId": "Bethina_Zehe_1754190991596",
+    "timestamp": "2025-08-03T03:47:53.709Z",
+    "app": "Ember Pro",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0",
+    "deviceMemory": 8,
+    "platform": "Win32",
+    "language": "en-US"
+  },
+  {
+    "title": "Iams :: App Login",
+    "url": "http://localhost/iams/login?ref_url_go_to=aHR0cDovL2xvY2FsaG9zdC9pYW1zL2NsaWVudHNfbGlzdC5waHA=",
+    "referer": "",
+    "host": "localhost",
+    "visitorId": "Bethina_Zehe_1754190991596",
+    "timestamp": "2025-08-03T03:48:40.170Z",
+    "app": "Ember Pro",
+    "ref_url_go_to": "aHR0cDovL2xvY2FsaG9zdC9pYW1zL2NsaWVudHNfbGlzdC5waHA=",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0",
+    "deviceMemory": 8,
+    "platform": "Win32",
+    "language": "en-US"
+  },
+  {
+    "title": "Iams :: App Login",
+    "url": "http://localhost/iams/login?ref_url_go_to=aHR0cDovL2xvY2FsaG9zdC9pYW1zL2NsaWVudHNfbGlzdC5waHA=",
+    "referer": "",
+    "host": "localhost",
+    "visitorId": "Bethina_Zehe_1754190991596",
+    "timestamp": "2025-08-03T03:50:29.690Z",
+    "scriptData": {
+      "app": "Ember Pro"
+    },
+    "urlData": {
+      "ref_url_go_to": "aHR0cDovL2xvY2FsaG9zdC9pYW1zL2NsaWVudHNfbGlzdC5waHA="
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0",
+    "deviceMemory": 8,
+    "platform": "Win32",
+    "language": "en-US"
+  },
+  {
+    "title": "Iams :: App Login",
+    "url": "http://localhost/iams/login?ref_url_go_to=aHR0cDovL2xvY2FsaG9zdC9pYW1zL2NsaWVudHNfbGlzdC5waHA=",
+    "referer": "",
+    "host": "localhost",
+    "visitorId": "Bethina_Zehe_1754190991596",
+    "timestamp": "2025-08-03T03:54:55.607Z",
+    "scriptData": {
+      "coraasset": "Ember Pro"
+    },
+    "urlData": {
+      "ref_url_go_to": "aHR0cDovL2xvY2FsaG9zdC9pYW1zL2NsaWVudHNfbGlzdC5waHA="
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0",
+    "deviceMemory": 8,
+    "platform": "Win32",
+    "language": "en-US"
+  },
+  {
+    "title": "Iams :: App Login",
+    "url": "http://localhost/iams/login",
+    "referer": "http://localhost/iams/resetpassword",
+    "host": "localhost",
+    "visitorId": "Bethina_Zehe_1754190991596",
+    "timestamp": "2025-08-03T03:56:08.640Z",
+    "scriptData": {
+      "coraasset": "Ember Pro"
+    },
+    "urlData": {},
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0",
+    "deviceMemory": 8,
+    "platform": "Win32",
+    "language": "en-US"
+  }
+]
