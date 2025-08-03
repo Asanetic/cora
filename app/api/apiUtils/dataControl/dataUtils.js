@@ -12,6 +12,7 @@ export async function mosySqlInsert(tbl, fieldsAndValuesJson, formBody) {
   let magicColumns = [];
   let magicValues = [];
 
+  console.log(`insert tot dbbbb `, fieldsAndValuesJson , formBody)
   for (let key in fieldsAndValuesJson) {
     const value = fieldsAndValuesJson[key];
     
