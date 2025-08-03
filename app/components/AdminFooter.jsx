@@ -14,7 +14,6 @@ export default function AdminFooter() {
       <div id="magic_alert"></div>
       <DynamicModalProvider />
       <FloatingUpgradeButton/>
-      <script type="text/javascript" src="http://localhost:3000/cora.js?coraasset=Cora"></script>
 
 
     </>

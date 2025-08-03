@@ -20,7 +20,7 @@
   }
 
   async function generateVisitorNameId() {
-    const res = await fetch('http://localhost:3000/api/corav2/visitorbook');
+    const res = await fetch('https://cora.asanetic.com/api/corav2/visitorbook');
     const json = await res.json();
     return json.name;
   }
@@ -63,7 +63,7 @@
 
     console.log(`corav2`, data);
 
-    fetch('http://localhost:3000/api/corav2/corastats', {
+    fetch('https://cora.asanetic.com/api/corav2/corastats', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
