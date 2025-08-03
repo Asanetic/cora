@@ -12,7 +12,7 @@ export async function mosySqlInsert(tbl, fieldsAndValuesJson, formBody) {
   let magicColumns = [];
   let magicValues = [];
 
-  console.log(`insert tot dbbbb `, fieldsAndValuesJson , formBody)
+  //console.log(`insert tot dbbbb `, fieldsAndValuesJson , formBody)
   for (let key in fieldsAndValuesJson) {
     const value = fieldsAndValuesJson[key];
     
@@ -33,6 +33,7 @@ export async function mosySqlInsert(tbl, fieldsAndValuesJson, formBody) {
   const preparedCols = magicColumns.join(", ");
   const placeholders = magicValues.map(() => '?').join(", ");
   const query = `INSERT INTO \`${activeDB}\`.\`${tbl}\` (${preparedCols}) VALUES (${placeholders})`;
+  console.log(`insert tot dbbbb `, fieldsAndValuesJson , query)
 
   try {
     const [result] = await conn.execute(query, magicValues);
