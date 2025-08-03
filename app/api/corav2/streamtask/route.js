@@ -153,7 +153,11 @@ async function runPost(taskId, send)
 
     send('🚀 Launching browser...');
 
-    const browser = await puppeteer.launch({ headless: headlessStatus });
+    const browser = await puppeteer.launch({
+      headless: headlessStatus, // can be true or false, depending on how you're debugging
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    
     const page = await browser.newPage();
 
 
