@@ -171,6 +171,27 @@ async function runPost(taskId, send)
     send(`🌐 Navigating to: ${marketName} - ${pageUrl} `);
     await page.goto(pageUrl, { waitUntil: 'networkidle2',  timeout: 60000 });
 
+    //detect allow / declien cookies
+    send(`Detecting allow all cookies component ....`)
+    const triggerAllowCookies = await page.evaluate(() => {
+      const phrases = [
+        "Allow all cookies",
+      ];
+
+      const spans = Array.from(document.querySelectorAll('span'));
+      for (const phrase of phrases) {
+        const postTrigger = spans.find(span => span.textContent?.toLowerCase().includes(phrase.toLowerCase()));
+        if (postTrigger) {
+          postTrigger.click();
+          return true;
+        }
+      }
+      return false;
+    });
+
+    if (!triggerAllowCookies) send("ℹ️ Allow cookies not found. next step");
+
+
     send('🧠 Waiting for "What\'s on your mind?" trigger...');
     const triggerClicked = await page.evaluate(() => {
       const phrases = [
