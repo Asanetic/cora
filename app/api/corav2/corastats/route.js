@@ -54,8 +54,10 @@ export async function POST(req) {
     "device" : platform, 
     "sourceurl" : referer , 
     "visitedurl" : url, 
-    "script_data" : scriptData, 
-    "url_data" : body, 
+
+    // ✅ Stringify these for MySQL
+    "script_data": JSON.stringify(scriptData || {}), 
+    "url_data": JSON.stringify(body || {}), 
 
   };
 
