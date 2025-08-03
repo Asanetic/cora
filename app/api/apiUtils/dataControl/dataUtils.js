@@ -33,7 +33,7 @@ export async function mosySqlInsert(tbl, fieldsAndValuesJson, formBody) {
   const preparedCols = magicColumns.join(", ");
   const placeholders = magicValues.map(() => '?').join(", ");
   const query = `INSERT INTO \`${activeDB}\`.\`${tbl}\` (${preparedCols}) VALUES (${placeholders})`;
-  console.log(`insert tot dbbbb `, fieldsAndValuesJson , query)
+  console.log(`insert tot dbbbb `, fieldsAndValuesJson , query , magicValues)
 
   try {
     const [result] = await conn.execute(query, magicValues);
