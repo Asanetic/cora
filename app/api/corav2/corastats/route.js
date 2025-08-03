@@ -17,6 +17,7 @@ export async function OPTIONS() {
 
 export async function POST(req) {
        const body = await req.json();
+       console.log(`corastats log `, req , body)
 
   try {
    
@@ -37,7 +38,6 @@ export async function POST(req) {
    const urlData = body.urlData || ""
    const userAgent = body.userAgent || ""
    const platform = body.platform || ""
-
 
   //--- Begin  visitors_log inputs array ---// 
   const VisitorslogInputsArr = {
