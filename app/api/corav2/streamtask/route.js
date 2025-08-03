@@ -172,7 +172,7 @@ async function runPost(taskId, send)
     await page.goto(pageUrl, { waitUntil: 'networkidle2',  timeout: 60000 });
 
     const triggerAllowCookies = await page.evaluate(() => {
-      const phrases = ["Allow all cookies", "Accept all", "Accept cookies", "Agree"]; // Add more as needed
+      const phrases = ["Decline optional cookies"]; // Add more as needed
     
       const clickableTags = ["button", "a", "span", "div", "p"];
     
@@ -195,6 +195,10 @@ async function runPost(taskId, send)
     } else {
       send("ℹ️ Allow cookies not found. Continuing...");
     }
+
+    send(" >> Preparing next sequence...");
+
+    await new Promise(res => setTimeout(res, 4500));
 
 
     send('🧠 Waiting for "What\'s on your mind?" trigger...');
