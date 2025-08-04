@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snatch It!</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 300px; }
+    label { display: block; margin-top: 10px; }
+    select, input, textarea { width: 100%; margin-top: 5px; }
+    button { margin-top: 10px; width: 100%; padding: 5px; }
+  </style>
+</head>
+<body>
+  <h3>Tag This Page</h3>
+  <form id="snatchForm" method="post">
+    <label>Site Category / tag
+      <input list="siteClassList" name="site_class" id="site_class_input" required >
+      <datalist id="siteClassList"></datalist>
+    </label>
+
+    <label>Parent Site
+      <input list="parentSiteList" name="parent_site" id="parent_site_input" required >
+      <datalist id="parentSiteList"></datalist>
+    </label>
+
+    <button type="submit">Send</button>
+  </form>
+  <div id="status"></div>
+
+  <script src="popup.js?v=33oo9898"></script>
+</body>
+</html>
